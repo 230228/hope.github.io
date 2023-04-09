@@ -8,29 +8,55 @@
     <link rel="stylesheet" href="./Css/a.css">
 </head>
 <style>
-
+    .title{
+        text-align: center;
+        padding: 25px 0;
+        font-size: 1.3rem;
+        font-family: "仿宋";
+        font-weight: 900;
+        border-bottom: 3px gainsboro dashed;
+    }
 .outline{
     display: flex;
+    /* 弹性布局换行 */
     flex-wrap: wrap ;
+/* 自动均分一行的间距 */
+    justify-content: space-between;
 }
-.outline>div{
-    width: 100px;
-    height: 200px;
-    margin: 5%;
+/* 当最后一行 不够时候 元素靠左 */
+.outline::after{
+    content: "";
+    flex: auto;
+}
+@media screen and (min-width:700px){
+    .outline>div{
+    width: 8%;
+    height: 15%;
+    margin: 3%;
     text-align: center;
-    line-height:200px ;
+    line-height:170px ;
     background-color: rgb(255, 236, 160);
+} 
+
 }
+@media screen and (max-width:700px){
+    .outline>div{
+    width: 27%;
+    height: 10%;
+    margin: 3%;
+    text-align: center;
+    line-height:150px ;
+    background-color: rgb(255, 236, 160);
+}    
+}
+
 </style>
 <body>
-    <div class="return"> <a href="./index.html"> 返回</a> </div>
+    <div class="title"> 分类 </div>
     <div class="outline">
-
-
-
-    <div>书斋</div>
-    <div>创作</div>
-    <div>音乐</div>
-
+<div> <a href="./content/Books/outline.html">书摘 </a> </div>
+<div>创作</div>
+<div>音乐</div>
+<div>国学</div>
 </body>
 </html>
