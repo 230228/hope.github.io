@@ -1,24 +1,27 @@
-body{
-    border-bottom: 3px gainsboro dashed;
-
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .frame {
   margin: 2%;
   font-size: 13px;
-  height: 77vh;
-  overflow:scroll ;
-  
+  height: 80%;
+  overflow: scroll;
+
 }
-.frame::-webkit-scrollbar{display:none}
+.frame::-webkit-scrollbar {
+  display: none;
+}
 .one {
   border-bottom: 1px solid gainsboro;
-
 }
 .name {
   padding: 10px;
   font-weight: 600;
   width: 60px;
-
 }
 .piece {
   display: flex;
