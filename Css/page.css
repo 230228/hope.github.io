@@ -46,7 +46,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 6%;
     height: 120px;
     padding: 5px;
@@ -94,4 +93,7 @@ body {
     text-align: center;
     background-color: rgb(255, 243, 195);
   }
+}
+.kong{
+  background-color: rgb(255, 255, 255) !important;
 }
