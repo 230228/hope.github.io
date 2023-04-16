@@ -2,12 +2,12 @@ var a_idx = 0;
 jQuery(document).ready(function ($) {
   $("body").click(function (e) {
     var a = new Array(
-      "❤自信❤",
-      "❤睿智❤",
-      "❤冷静❤",
-      "❤勇敢❤",
-      "❤独立❤",
-      "❤博学❤"
+      "自信",
+      "睿智",
+      "冷静",
+      "勇敢",
+      "独立",
+      "博学"
     );
     var $i = $("<span></span>").text(a[a_idx]);
     a_idx = (a_idx + 1) % a.length;
