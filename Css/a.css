@@ -1,12 +1,39 @@
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 1.3rem;
+  font-family: "仿宋";
+  font-weight: 900;
+  border-bottom: 3px gainsboro dashed;
+}
+.index {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: aliceblue;
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+
+}
+#color {
+  color: aliceblue;
+}
+
+@media screen and (min-width:700px) {
+.index{
+  top: 80%;
+  left: 93%;
+}
+}
+@media screen and (max-width:700px){
+  .index{
+    top: 90%;
+    left: 80%;
   }
-  .title{
-    text-align: center;
-    padding: 25px 0;
-    font-size: 1.3rem;
-    font-family: "仿宋";
-    font-weight: 900;
-    border-bottom: 3px gainsboro dashed;
 }
